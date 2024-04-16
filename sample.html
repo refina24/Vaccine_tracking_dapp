@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccine Expiry Check DApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navbar">
+        <h1>Vaccine Expiry Check</h1>
+    </div>
+    <div id="root">
+        <div id="container1">
+            <h2>Add Vaccine</h2><br>
+            <label for="batchNumber">Batch Number:</label>
+            <input type="text" id="batchNumber" placeholder="Enter batch number"><br>
+            <label for="expirationDate">Expiration Date (Unix Timestamp):</label>
+            <input type="text" id="expirationDate" placeholder="Enter expiration date"><br><br>
+            <button onclick="addVaccine()">Add Vaccine</button>
+        </div>
+        <div id="container2">
+            <h2>Check Vaccine Expiry</h2><br>
+            <label for="checkBatchNumber">Batch Number to Check:</label>
+            <input type="text" id="checkBatchNumber" placeholder="Enter batch number"><br>
+            <label for="checkDate">Date to Check (Unix Timestamp):</label>
+            <input type="text" id="checkDate" placeholder="Enter date to check"><br><br>
+            <button onclick="checkVaccineExpiry()">Check Vaccine Expiry</button>
+        </div></div>
+        <div id="output"></div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
